@@ -1,5 +1,10 @@
 require "bundler/setup"
 require "daxtra"
+require "pry"
+require "vcr"
+require "webmock/rspec"
+require_relative "support/document"
+require_relative "support/vcr"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

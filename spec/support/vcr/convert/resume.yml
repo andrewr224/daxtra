@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://cvxdemo.daxtra.com/cvx/rest/api/v1/convert2html
+    body:
+      encoding: UTF-8
+      string: account=test&file=
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 15 Mar 2019 16:10:39 GMT
+      Server:
+      - Apache/2.2.34 (Amazon)
+      Access-Control-Allow-Origin:
+      - "*"
+      Cvxtractorservicehttp:
+      - v1.0
+      Content-Length:
+      - '60'
+      Content-Type:
+      - text/xml; charset=
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "<CSERROR code='10'>document needs to be specified!</CSERROR>"
+    http_version: 
+  recorded_at: Fri, 15 Mar 2019 16:10:39 GMT
+recorded_with: VCR 4.0.0
